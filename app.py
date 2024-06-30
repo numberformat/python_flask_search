@@ -17,8 +17,8 @@ main = Blueprint("main", __name__)
 def index():
     return render_template("index.html")
 
-@main.route("/search")
-def search():
+@main.route("/query")
+def query():
     q = request.args.get("q")
     print(q)
 
@@ -36,7 +36,7 @@ def create_app():
 
     db.init_app(app)
 
-    app.register_blueprint(main)
+    app.register_blueprint(main, url_prefix="/search")
 
     return app
 

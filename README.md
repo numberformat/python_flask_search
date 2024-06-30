@@ -36,6 +36,10 @@ select * from song;
 flask run
 ```
 
+## How to run on Server
+
+see flask_how_to_run_on_server.md
+
 ## Reference
 
 <https://www.youtube.com/watch?v=PWEl1ysbPAY>

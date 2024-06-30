@@ -12,7 +12,7 @@
   <section class="section">
     <div class="columns">
       <div class="column is-one-third is-offset-one-third">
-        <input type="text" class="input" placeholder="Search" name="q" hx-get="/search" hx-trigger="keyup changed delay:500ms" hx-target="#results">
+        <input type="text" class="input" placeholder="Search" name="q" hx-get="{{ url_for('main.query') }}" hx-trigger="keyup changed delay:500ms" hx-target="#results">
       </div>
     </div>
     <table class="table is-fullwidth">
